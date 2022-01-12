@@ -1,0 +1,106 @@
+body {
+    background-image: radial-gradient(orange,yellow);
+    margin: 0px;
+}
+
+
+.header {
+    text-align: center;
+    margin: auto;
+    width: 40%;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+}
+
+.container1 {
+    width: 40%;
+    margin: auto;
+}
+
+.row1 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.r1-box {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(255, 4, 4);
+    transform: skew(-20deg);
+    margin-bottom: 60px;
+    animation: row1 5s linear 2s infinite;
+}
+
+@keyframes row1 {
+    50% {transform: skew(20deg);}
+}
+
+.r2-box {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(250, 114, 193);
+    transform: skew(0, 20deg);
+    margin-bottom: 60px;
+    animation: row2 5s linear 2s infinite;
+}
+
+@keyframes row2 {
+    50% {transform: skew(0, -20deg);}
+}
+
+.r3-box {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(220, 190, 248);
+    transform: rotate(0deg);
+    margin-bottom: 60px;
+    animation: row3 3s ease-in-out 2s infinite;
+}
+
+@keyframes row3 {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.r4-box {
+    width: 100px;
+    height: 100px;
+}
+
+.box1 {
+    background-color: rgb(48, 2, 2);
+    transform: scale(1, 0.5);
+    animation: box1 3s ease-in-out 2s infinite;
+}
+
+@keyframes box1 {
+    50% {
+        transform: scale(1, 1);
+    }
+}
+
+.box2 {
+    background-color: rgb(255, 20, 20);
+    transform: scale(0.3, 1);
+    animation: box1 3s ease-in-out 2s infinite;
+}
+
+.box3 {
+    background-color: rgb(25, 0, 255);
+    transform: rotate(-10deg);
+    animation: box3 2s linear 2s infinite;
+}
+
+@keyframes box3 {
+    50% {
+        transform: rotate(-90deg);
+    }
+}
+
+.index1 {
+    text-align: center;
+    font-size: 2rem;
+    width: 80%;
+    margin: auto;
+}

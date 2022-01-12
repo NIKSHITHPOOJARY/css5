@@ -1,0 +1,201 @@
+body {
+    background-image:radial-gradient(rgb(255, 115, 0),rgba(255, 166, 0, 0.849));
+    margin: 0px;
+}
+
+
+.header {
+    text-align: center;
+    margin: auto;
+    width: 40%;
+}
+
+.container1 {
+    width: 40%;
+    margin: auto;
+}
+
+.row1 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.r1-box {
+    width: 100px;
+    height: 100px;
+    background-color: royalblue;
+    transform: skew(-20deg);
+    margin-bottom: 60px;
+    animation: row1 5s linear 2s infinite;
+}
+
+@keyframes row1 {
+    50% {transform: skew(20deg);}
+}
+
+.r2-box {
+    width: 100px;
+    height: 100px;
+    background-color: salmon;
+    transform: skew(0, 20deg);
+    margin-bottom: 60px;
+    animation: row2 5s linear 2s infinite;
+}
+
+@keyframes row2 {
+    50% {transform: skew(0, -20deg);}
+}
+
+.r3-box {
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+    transform: rotate(0deg);
+    margin-bottom: 60px;
+    animation: row3 3s ease-in-out 2s infinite;
+}
+
+@keyframes row3 {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.r4-box {
+    width: 100px;
+    height: 100px;
+}
+
+.box1 {
+    background-color: rgb(150, 12, 12);
+    transform: scale(1, 0.5);
+    animation: box1 3s ease-in-out 2s infinite;
+}
+
+@keyframes box1 {
+    50% {
+        transform: scale(1, 1);
+    }
+}
+
+.box2 {
+    background-color: rgba(255, 20, 145, 0.74);
+    transform: scale(0.3, 1);
+    animation: box1 3s ease-in-out 2s infinite;
+}
+
+.box3 {
+    background-color: rgba(0, 191, 255, 0.219);
+    transform: rotate(-10deg);
+    animation: box3 2s linear 2s infinite;
+}
+
+@keyframes box3 {
+    50% {
+        transform: rotate(-90deg);
+    }
+}
+
+.index1 {
+    text-align: center;
+    font-size: 2rem;
+    width: 80%;
+    margin: auto;
+}
+
+
+.container2 {
+    width: 40%;
+	margin: auto;
+	display: flex;
+    align-items: center;
+	justify-content: center;
+}
+
+.c2-box1 {
+    width: 100px;
+	height: 100px;
+    background-color: rgb(3, 19, 36);
+    margin: 15px;
+    transition: width 2s ease 0s;
+}
+
+.c2-box1:hover {
+    width: 300px;
+}
+
+.c2-box2 {
+    width: 100px;
+	height: 100px;
+	background-color: rgb(233, 109, 109);
+	margin: 15px;
+	transition: width 2s ease-out 0s, height 3s ease-out 0s;
+}
+
+.c2-box2:hover {
+    width: 300px;
+	height: 300px;
+}
+
+.c2-box3 {
+    width: 100px;
+	height: 100px;
+    background-color: rgb(6, 93, 180);
+    margin: 15px;
+    transition: width 2s linear 0s;
+}
+
+.c2-box3:hover {
+    width: 300px;
+}
+
+.c2-box4 {
+    width: 100px;
+    height: 100px;
+	background-color: rgb(247, 82, 82);
+	margin: 15px;
+	transition: width 2s ease-out 0s;
+}
+
+.c2-box4:hover {
+    width: 300px;
+}
+
+.c2-box5 {
+    width: 100px;
+    height: 100px;
+	background-color: rgb(38, 255, 30);
+	margin: 15px;
+	transition: width 2s ease-in 0s;
+}
+
+.c2-box5:hover {
+    width: 300px;
+}
+
+.c2-box6 {
+    width: 100px;
+    height: 100px;
+	background-color: rgba(202, 0, 135, 0.76);
+	margin: 15px;
+	transition: width 2s ease-in-out 0s;
+}
+
+.c2-box6:hover {
+    width: 300px;
+}
+
+
+.back-next {
+    width: 40%;
+	margin: auto;
+	text-align: center;
+	font-size: 1.8rem;
+    position: relative;
+    left: 20px;
+}
+
+.back {
+    color: rgb(78, 3, 78);
+}
+
